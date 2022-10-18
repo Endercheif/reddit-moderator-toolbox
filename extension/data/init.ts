@@ -144,6 +144,7 @@ async function checkLoadConditions (tries = 3) {
 
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1380812#c7
     // https://github.com/toolbox-team/reddit-moderator-toolbox/issues/98
+    // @ts-ignore
     if ((typeof InstallTrigger !== 'undefined' || 'MozBoxSizing' in document.body.style) && browser.extension.inIncognitoContext) {
         throw new Error('Firefox is in Incognito mode, Toolbox will not work');
     }
@@ -275,6 +276,7 @@ async function doSettingsUpdates () {
 
     // new profiles have some weird css going on. This remedies the weirdness...
     window.addEventListener('TBNewPage', event => {
+        // @ts-ignore
         if (event.detail.pageType === 'userProfile') {
             $body.addClass('mod-toolbox-profile');
         } else {

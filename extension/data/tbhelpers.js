@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import SnuOwnd from 'snuownd';
+import * as SnuOwnd from 'snuownd';
 import pako from 'pako';
 
 /**

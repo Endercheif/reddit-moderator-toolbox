@@ -16,6 +16,7 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
+        "@types/codemirror": "^5.60.5",
         "codemirror": "^5.65.9",
         "dompurify": "^2.4.0",
         "jquery": "^3.6.1",
@@ -28,7 +29,14 @@
     "devDependencies": {
         "@rollup/plugin-commonjs": "^22.0.2",
         "@rollup/plugin-node-resolve": "^14.1.0",
+        "@rollup/plugin-typescript": "^9.0.1",
+        "@types/dompurify": "^2.3.4",
+        "@types/jquery": "^3.5.14",
+        "@types/pako": "^2.0.0",
+        "@types/tinycolor2": "^1.4.3",
+        "@types/webextension-polyfill": "^0.9.1",
         "cross-env": "^7.0.3",
+        "del-cli": "^5.0.0",
         "docdash": "^1.1.1",
         "eslint": "^8.24.0",
         "eslint-plugin-import": "^2.23.4",
@@ -36,6 +44,7 @@
         "jsdoc": "^3.6.3",
         "rollup": "^2.79.1",
         "rollup-plugin-copy": "^3.4.0",
-        "del-cli": "^5.0.0"
+        "tslib": "^2.4.0",
+        "typescript": "^4.8.4"
     }
 }
